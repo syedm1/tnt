@@ -165,7 +165,7 @@ export default function Home() {
           >
             <button
               className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
-              style={{ marginLeft: "120px" }}
+              style={{ marginLeft: "120px", padding: "2%" }}
               onClick={(e) => handleConversion()}
             >
               {RefreshSVGIcon()}
@@ -173,7 +173,7 @@ export default function Home() {
             </button>
             <button
               className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-  flex items-center"
-              style={{ marginLeft: "190px", marginRight: "80px" }}
+              style={{ marginLeft: "190px", marginRight: "80px", padding: "2%" }}
               onClick={(e) => {
                 handleCopy();
               }}
