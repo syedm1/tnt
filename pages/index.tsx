@@ -1,11 +1,11 @@
 import Head from "next/head";
-import LinkCard from "../components/LinkCard/LinkCard";
+import { LinkCard } from "../components/LinkCard/LinkCard";
 
 export default function Home() {
   return (
     <div className="px-8 py-0">
       <Head>
-        <title>TNT - Nextjs boilerplate Super-Power</title>
+        <title>TNT - Explosive productivity tools</title>
         <meta
           name="description"
           content="nextjs boilerplate created by Arvin Mostafaei"
@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
 
         <p className="mx-0 my-10 mt-4 text-3xl leading-normal">
-          customized Nextjs boilerplate
+          one stop for all the productivity tools
         </p>
 
         <div className="flex flex-wrap items-center justify-center max-w-[800px] mt-10">
