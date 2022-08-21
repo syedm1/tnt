@@ -34,6 +34,12 @@ export default function Home() {
             "Remove Pesky Whitespaces",
             "Remove white spaces from your text"
           )}
+          {LinkCard(
+            "/removeBadWords",
+            "Remove Bad words",
+            "Remove bad words from yout text"
+          )
+          }
         </div>
       </main>
     </div>
