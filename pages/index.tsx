@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
 
         <p className="mx-0 my-10 mt-4 text-3xl leading-normal">
-          one stop productivity tools
+          one stop for all the productivity tools
         </p>
 
         <div className="flex flex-wrap items-center justify-center max-w-[800px] mt-10">
