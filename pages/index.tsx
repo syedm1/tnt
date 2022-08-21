@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LinkCard from "../components/LinkCard/LinkCard";
+import { LinkCard } from "../components/LinkCard/LinkCard";
 
 export default function Home() {
   return (

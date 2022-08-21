@@ -1,4 +1,10 @@
-export default (URL: string, Heading: string, SubHeading: string) => {
+import { ReactChild } from "react";
+
+export const LinkCard = (
+  URL: string,
+  Heading: string,
+  SubHeading: string
+): ReactChild => {
   return (
     <>
       <a
