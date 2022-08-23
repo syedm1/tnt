@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import {
   calculatorStyles,
   displayStyles,
+  expressionStyles,
   numbersButtonStyles,
+  numbersStyles,
   operandsButtonStyles,
-  panelStyles
+  operatorsStyles,
+  panelStyles,
+  resultButtonStyles
 } from "../../styles/tsxBased/calculatorPagestyles";
 
 const Calculator = () => {
@@ -102,7 +106,7 @@ const Calculator = () => {
   const getNumberButtons = () => {
     return (
       <>
-        {WHOLE_NUMBERS.map((x) =>
+        {WHOLE_NUMBERS.reverse().map((x) =>
           x !== 0 ? makeNumberbutton(x) : makeNumberZerobutton(0)
         )}
       </>
@@ -114,7 +118,11 @@ const Calculator = () => {
   };
 
   const getResultButton = () => {
-    return <button onClick={() => handleResult()}>=</button>;
+    return (
+      <button style={resultButtonStyles} onClick={() => handleResult()}>
+        =
+      </button>
+    );
   };
 
   const makeNumberbutton = (data) => {
@@ -149,11 +157,17 @@ const Calculator = () => {
       <h3 className="display" style={displayStyles}>
         {display}
       </h3>
-      <span className="expression">{expression}</span>
+      <span className="expression" style={expressionStyles}>
+        {expression}
+      </span>
       <section className="panel" style={panelStyles}>
-        <section className="numbers">{getNumberButtons()}</section>
-        <section className="operators">{getOperandsButtons()}</section>
-        <section className="result">{getResultButton()}</section>
+        <section className="numbers" style={numbersStyles}>
+          {getNumberButtons()}
+        </section>
+        <section className="operators" style={operatorsStyles}>
+          {getOperandsButtons()}
+          {getResultButton()}
+        </section>
       </section>
     </div>
   );
