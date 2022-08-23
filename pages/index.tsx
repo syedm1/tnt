@@ -38,8 +38,8 @@ export default function Home() {
             "/removeBadWords",
             "Remove Bad words",
             "Remove bad words from yout text"
-          )
-          }
+          )}
+          {LinkCard("/calculator", "Basic Calculator", "Do all your math here")}
         </div>
       </main>
     </div>
