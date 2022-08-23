@@ -5,7 +5,7 @@ import {
   numbersButtonStyles,
   operandsButtonStyles,
   panelStyles
-} from "./styles";
+} from "../../styles/tsxBased/calculatorPagestyles";
 
 const Calculator = () => {
   /* todo: 
@@ -112,9 +112,11 @@ const Calculator = () => {
   const getOperandsButtons = () => {
     return <>{OPERANDS.map(makeOperandButton)}</>;
   };
+
   const getResultButton = () => {
     return <button onClick={() => handleResult()}>=</button>;
   };
+
   const makeNumberbutton = (data) => {
     return (
       <button style={numbersButtonStyles} onClick={() => handleClick(data)}>
