@@ -7,7 +7,7 @@ export const calculatorStyles = {
 } as React.CSSProperties;
 export const displayStyles = {
   width: "40%",
-  minHeight: "20px",
+  minHeight: "40px",
   alignSelf: "center",
   background: "lightgray",
   padding: "10px",
