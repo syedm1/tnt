@@ -2,11 +2,12 @@ export const calculatorStyles = {
   display: "flex",
   flexFlow: "column",
   width: "100%",
-  fontFamily: "sans-serif"
+  fontFamily: "sans-serif",
+  textAlign: "center"
 };
 export const displayStyles = {
   width: "40%",
-  height: "20px",
+  minHeight: "20px",
   alignSelf: "center",
   background: "lightgray",
   padding: "10px",
