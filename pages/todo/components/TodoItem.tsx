@@ -1,4 +1,4 @@
-import { todoItemStyles } from "../styles/styles";
+import { todoItemStyles } from "../../../styles/tsxBased/todoModuleStyles";
 
 const TodoItem: React.FC<{
   text: string;

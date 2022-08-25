@@ -1,3 +1,6 @@
+/*
+resturcture models in better place
+*/
 class TodoItem {
   id: string;
   text: string;

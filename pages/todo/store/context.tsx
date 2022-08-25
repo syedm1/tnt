@@ -1,5 +1,5 @@
 import { useState, createContext, ReactNode } from "react";
-import TodoItem from "../models/TodoItem";
+import TodoItem from "../../../components/models/TodoItem";
 
 type TodosContextObj = {
   items: TodoItem[];

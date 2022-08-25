@@ -5,7 +5,7 @@ import {
   todoAddButton,
   todoFormStyles,
   todoFormInput
-} from "../styles/styles";
+} from "../../../styles/tsxBased/todoModuleStyles";
 
 const NewTodo: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
