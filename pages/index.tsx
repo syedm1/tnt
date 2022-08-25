@@ -40,6 +40,11 @@ export default function Home() {
             "Remove bad words from yout text"
           )}
           {LinkCard("/calculator", "Basic Calculator", "Do all your math here")}
+          {LinkCard(
+            "/todo",
+            "Simple todo list",
+            "Get your stuff done with simple todo list"
+          )}
         </div>
       </main>
     </div>
