@@ -1,6 +1,7 @@
 import NewTodo from "./components/NewTodo";
 import Todos from "./components/Todos";
 import ContextProvider from "./store/context";
+import Layout from "components/Layout/Layout";
 
 const todoApp = () => {
   /*
@@ -14,10 +15,12 @@ const todoApp = () => {
     */
   return (
     <>
-      <ContextProvider>
-        <NewTodo />
-        <Todos />
-      </ContextProvider>
+      <Layout>
+        <ContextProvider>
+          <NewTodo />
+          <Todos />
+        </ContextProvider>
+      </Layout>
     </>
   );
 };
